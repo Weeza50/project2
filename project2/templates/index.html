@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<script>
+            document.addEventListener('DOMContentLoaded',() =>{
+                 document.querySelectorAll('.chan').forEach(button =>{
+                     button.onclick = ()=>{
+                         var ch = button.dataset.ch;
+                         var name = document.querySelector('#name').value;
+                         alert(` you go by ${name} and your are on channel ${ch} `)
+                     };
+                 });
+            });
+		</script>
+		<title>project 2</title>
+	</head>
+	
+	<body>
+
+		<form method="post">
+            <input type="radio" value="1" name="channels" > ch1</input><br>
+            <input type="radio" value="2" name="channels" > ch2</input><br>
+            <input type="radio" value="3" name="channels" > ch3</input><br>
+            <input placeholder="Name" name="name" id="name">
+			<button>Submit</button>
+		</form>
+	</body>
+</html>
